@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About | Bafana Mtsweni</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<script>
+function showTab(tabId) {
+
+    // Hide all contents
+    const contents = document.querySelectorAll('.tab-content');
+    contents.forEach(content => {
+        content.classList.remove('active');
+    });
+
+    // Remove active from buttons
+    const buttons = document.querySelectorAll('.tab-btn');
+    buttons.forEach(btn => {
+        btn.classList.remove('active');
+    });
+
+    // Show selected content
+    document.getElementById(tabId).classList.add('active');
+
+    // Activate clicked button
+    event.target.classList.add('active');
+}
+</script>
+
+<body>
+
+<header>
+    <div class="logo">
+        <img src="Logo1.png" alt="logo">
+        <span>REI2TECH</span>
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a class="active" href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section class="section">
+    <div class="section-container">
+        <h2 class="section-title">About Me</h2>
+
+        <!-- TABS -->
+        <div class="about-tabs">
+            <button class="tab-btn active" onclick="showTab('education')">
+                Education
+            </button>
+
+            <button class="tab-btn" onclick="showTab('career')">
+                Career Background
+            </button>
+
+            <button class="tab-btn" onclick="showTab('personal')">
+                Personal Background
+            </button>
+        </div>
+
+        <!-- CONTENT BOX -->
+       <div class="tab-content active" id="education">
+         <h3>Education</h3>
+
+          <div class="education-item">
+            <p><strong>Tshepagalang Secondary School</strong></p>
+            <p>Grade 12: Mathematics and Sciences(2018)</p>
+            <p>Admission to Bachelor's Degree</p>
+            <p>Letlhabile, Brits, North West</p>
+         </div>
+
+            <br>
+
+         <div class="education-item">
+           <p><strong>Tshwane University of Technology (TUT)</strong></p>
+           <p>National Diploma in Information Technology (2019-2024)</p>
+           <p>Communications Networks</p>
+           <p>Soshanguve South Campus</p>
+
+         </div>
+
+            <br>
+         <div class="education-item">
+            <p><strong>Microsoft Certifications</strong></p>
+            <p>Microsoft 365 Endpoint Administrator Associate (MD-102)</p>
+            <p>Microsoft 365 Administrator Expert (MS-102)</p>
+            <p>Microsoft Identity and Access Administrator (SC-300)</p>
+         </div>
+
+        </div>
+
+<div class="tab-content" id="career">
+    <h3>Career Background</h3>
+
+    <!-- JOB 1 -->
+    <div class="career-item">
+        <p class="job-title">Junior IT Support Technician</p>
+        <p class="company">@ Unisa Enterprise (Pty) Ltd – Midrand</p>
+        <p class="duration">Intern & Junior Position: October 2023 – December 2025</p>
+
+        <p class="task-heading">Tasks:</p>
+        <ul>
+            <li>Install, configure, and maintain desktops, laptops, printers, and peripheral devices.</li>
+            <li>Provide first-line technical support resolving hardware, software, and network-related issues.</li>
+            <li>Assist with onboarding and basic ICT induction for new employees.</li>          
+            <li>Worked closely with Network, Security, and Cloud Administrators from UNISA.</li>
+            <li>Managed user accounts and access rights through Active Directory and identity systems.</li>
+            <li>Ensured proper inventory tracking of IT equipment and software licenses; managed company website.</li>
+            <li>Monitored system performance and reported irregularities to senior IT staff.</li>
+            <li>Hybrid work environment (In-office and Remote).</li>
+        </ul>
+    </div>
+
+    <br><br>
+
+    <!-- JOB 2 -->
+    <div class="career-item">
+        <p class="job-title">Modern Desktop Technician</p>
+        <p class="company">@ Afrika Tikkun Service & Mecer Inter-ed (Training Provider) – Midrand</p>
+        <p class="duration">Learnership: June 2023 – September 2023</p>
+
+        <p class="task-heading">Tasks:</p>
+        <ul>
+            <li>Learned and practiced CompTIA A+ and Network+ fundamentals.</li>
+            <li>Gained foundational knowledge of Microsoft Azure and AWS Cloud fundamentals.</li>
+            <li>Assisted with desktop and laptop setup, configuration, and support.</li>
+            <li>Supported user account management using Active Directory.</li>
+            <li>Assisted in managing servers including monitoring and maintenance tasks.</li>
+            <li>Provided IT support and troubleshooting for hardware, software, and network issues.</li>
+            <li>Followed IT service management procedures and documented issues and resolutions.</li>
+        </ul>
+    
+</div>
+
+</div>
+  <div class="tab-content" id="personal">
+    <h3>Personal Background</h3>
+
+    <p>
+        Bafana Koketso Mtsweni was born and raised in Maboloka Village, 
+        Brits, in the North West province. He was raised by a strong 
+        single mother alongside his three siblings. Growing up in a 
+        challenging environment taught him responsibility, resilience, 
+        and discipline from an early age.
+    </p>
+
+    <p>
+        From a young age, he balanced academics with football, which 
+        helped him develop focus, teamwork, and leadership skills. 
+        He became the first person in his family to attend university, 
+        marking a proud milestone for his family and community.
+    </p>
+
+    <p>
+        At the age of 18, he enrolled at Tshwane University of Technology 
+        to pursue a National Diploma in Information Technology. By 22, 
+        he had completed all theoretical modules and began actively 
+        searching for practical experience to complete his diploma. 
+        His persistence led to a Modern Desktop Learnership opportunity 
+        in Midrand mid 2023, marking the beginning of his professional 
+        journey in Gauteng.
+    </p>
+
+    <p>
+        He later secured an internship at Unisa Enterprise (Pty) Ltd, 
+        where he demonstrated initiative, dedication, and continuous 
+        self-improvement. His performance earned him growth into a 
+        Junior IT Support Technician role. Although his employment 
+        ended due to company financial challenges (Retrenchment), the experience 
+        strengthened his personal, technical and professional capabilities.
+    </p>
+
+    <p>
+        Through his hard work, he was able to improve his family's 
+        living conditions, move them from a shack to a better house, 
+        support his siblings, and restore dignity and stability within 
+        his household. This remains one of his greatest personal victories.
+    </p>
+
+    <p>
+        He continues to actively play football and currently serves as 
+        the manager of Maboloka Fast 11 FC. In this role, he contributes 
+        to the community by guiding young boys away from crime and 
+        negative influences, encouraging them to focus on sport and 
+        education. He believes leadership means creating opportunities 
+        for others and giving back to the community.
+    </p>
+
+    <p>
+       He continues to seek contract or permanent employment opportunities, 
+       he remains committed to gaining valuable industry experience, expanding
+       his professional network, and strengthening the foundation of his entrepreneurial
+       ambitions since his long-term vision is to establish a sustainable IT solutions
+       company. That vision has already begun with the development of Rei2Tech, and this
+       portfolio website represents its first official project.
+    </p>
+  </div>
+
+    </div>
+</section>
+
+<footer>
+    © 2026 Bafana Koketso Mtsweni. All Rights Reserved.
+</footer>
+
+</body>
+</html>
